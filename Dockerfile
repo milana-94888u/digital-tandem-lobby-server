@@ -5,7 +5,7 @@ WORKDIR /usr/src
 COPY requirements.txt .
 
 RUN python3.11 -m pip install --upgrade pip
-RUN  python3.11 -m pip install --no-cache-dir -r requirements.txt
+RUN python3.11 -m pip install --no-cache-dir -r requirements.txt
 
 COPY src .
 
